@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS | 彼岸旅館「逢曲時」おうまがとき</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Serif+JP:wght@300;400;700&family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles_v2.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header style="background: rgba(10, 10, 10, 0.95);">
+        <div class="logo">
+            <a href="index.html"><img src="images/HP1.avif" alt="逢曲時"></a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#top">TOP</a></li>
+            <li><a href="index.html#about">逢曲時</a></li>
+            <li><a href="cast.html">キャスト</a></li>
+            <li><a href="photo.html">写真</a></li>
+            <li><a href="news.html">ニュース</a></li>
+            <li><a href="index.html#calendar">営業日</a></li>
+            <li><a href="index.html#sns">SNS</a></li>
+            <li><a href="SpecialThanks.html">SpecialThanks</a></li>
+        </ul>
+    </header>
+
+    <!-- Subpage Header -->
+    <section class="hero" style="height: 40vh; min-height: 300px; background-image: linear-gradient(to bottom, rgba(10,10,10,0.6), rgba(10,10,10,1)), url('images/top_bg.jpg');">
+        <h1 style="font-size: 3rem; margin-top: 50px;">ニュース</h1>
+        <p>お知らせ・イベント情報</p>
+    </section>
+
+    <!-- News List Section -->
+    <section id="news-list" style="padding-top: 50px;">
+        <!-- Year Filter (populated dynamically by JS) -->
+        <div class="category-filter fade-in" style="margin-bottom: 10px;">
+            <select id="news-year-filter" class="filter-select">
+                <!-- JS will insert year options here -->
+            </select>
+        </div>
+
+        <!-- Category Filter -->
+        <div id="news-category-filter" class="category-filter fade-in">
+            <button class="filter-btn active" data-filter="all">すべて</button>
+            <button class="filter-btn" data-filter="event">イベント</button>
+            <button class="filter-btn" data-filter="product">商品</button>
+            <button class="filter-btn" data-filter="news">ニュース</button>
+        </div>
+
+        <div class="info-box fade-in" style="max-width: 900px; padding: 30px; margin-top: 30px;">
+            <div id="dynamic-news-list" class="news-container">
+                <!-- JavaScript will render news items here -->
+            </div>
+
+            <!-- Pagination Controls -->
+            <div id="news-pagination" class="pagination-container">
+                <!-- JS will render pagination here -->
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;" class="fade-in">
+            <a href="index.html" class="btn-primary">トップへ戻る</a>
+        </div>
+    </section>
+
+    <!-- News Detail Modal -->
+    <div id="news-modal" class="lightbox">
+        <span class="lightbox-close" id="news-modal-close">&times;</span>
+        <div class="news-modal-content">
+            <div class="news-modal-header">
+                <div class="news-modal-meta">
+                    <span id="news-modal-date" class="news-date"></span>
+                    <span id="news-modal-badge" class="news-badge"></span>
+                </div>
+                <h3 id="news-modal-title" class="news-modal-title"></h3>
+            </div>
+            <div id="news-modal-body" class="news-modal-body">
+                <!-- JS will render news paragraphs here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 彼岸旅館おうまがとき「逢曲時」</p>
+    </footer>
+
+    <script src="news_data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

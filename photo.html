@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>写真 | 彼岸旅館「逢曲時」おうまがとき</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Serif+JP:wght@300;400;700&family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles_v2.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header style="background: rgba(10, 10, 10, 0.95);">
+        <div class="logo">
+            <a href="index.html"><img src="images/HP1.avif" alt="逢曲時"></a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#top">TOP</a></li>
+            <li><a href="index.html#about">逢曲時</a></li>
+            <li><a href="cast.html">キャスト</a></li>
+            <li><a href="photo.html">写真</a></li>
+            <li><a href="news.html">ニュース</a></li>
+            <li><a href="index.html#calendar">営業日</a></li>
+            <li><a href="index.html#sns">SNS</a></li>
+            <li><a href="SpecialThanks.html">SpecialThanks</a></li>
+        </ul>
+    </header>
+
+    <!-- Subpage Header -->
+    <section class="hero" style="height: 40vh; min-height: 300px; background-image: linear-gradient(to bottom, rgba(10,10,10,0.6), rgba(10,10,10,1)), url('images/top_bg.jpg');">
+        <h1 style="font-size: 3rem; margin-top: 50px;">写真</h1>
+        <p>店内風景</p>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="photo-list">
+        <div class="gallery fade-in" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
+            <div class="gallery-item">
+                <img src="images/shop_1.jpg" alt="店内風景 1">
+            </div>
+            <div class="gallery-item">
+                <img src="images/shop_2.jpg" alt="店内風景 2">
+            </div>
+            <div class="gallery-item">
+                <img src="images/shop_3.jpg" alt="店内風景 3">
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 60px;" class="fade-in">
+            <a href="index.html" class="btn-primary">トップへ戻る</a>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 彼岸旅館おうまがとき「逢曲時」</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

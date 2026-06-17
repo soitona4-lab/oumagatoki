@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彼岸旅館「逢曲時」おうまがとき | Omagatoki</title>
+    <meta name="description" content="現世と常世の狭間にある常世さんの店「逢曲時」各時代の誘魅(イザナミ)が女中として集う場所。">
+    
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Serif+JP:wght@300;400;700&family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles_v2.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/HP1.avif" alt="逢曲時"></a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#top">TOP</a></li>
+            <li><a href="index.html#about">逢曲時</a></li>
+            <li><a href="cast.html">キャスト</a></li>
+            <li><a href="photo.html">写真</a></li>
+            <li><a href="news.html">ニュース</a></li>
+            <li><a href="index.html#calendar">営業日</a></li>
+            <li><a href="index.html#sns">SNS</a></li>
+            <li><a href="SpecialThanks.html">SpecialThanks</a></li>
+        </ul>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="top" class="hero">
+        <div class="hero-logo">
+            <img src="images/logo.jpg" alt="逢曲時">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title fade-in">逢曲時</h2>
+        <div class="about-content fade-in">
+            <p>現世と常世の狭間にある常世さんの店「逢曲時」<br>各時代の誘魅(イザナミ)が女中として集う場所。</p>
+            <p>お客様を各3部屋、1部屋につき女中3人以上で<br>お客様をおもてなしします。</p>
+            <p>女中さんとお話しを楽しんだり、<br>舞や剣舞を鑑賞しながらお酒を飲んだりできます。</p>
+            
+            <a href="world.html" class="btn-primary" style="margin-top: 30px;">世界観を詳しく見る</a>
+        </div>
+    </section>
+
+    <!-- Cast Section (Preview) -->
+    <section id="cast" class="cast-preview">
+        <h2 class="section-title fade-in">キャスト</h2>
+        <div class="fade-in">
+            <p style="margin-bottom: 20px; color: var(--color-text-muted);">
+                魅力あふれるキャスト達が<br>皆様のご来館をお待ちしております。
+            </p>
+            <a href="cast.html" class="btn-primary">キャスト一覧を見る</a>
+        </div>
+    </section>
+
+    <!-- Shop Photo Section -->
+    <section id="shop-photo" class="shop-photo">
+        <h2 class="section-title fade-in">写真</h2>
+        <div class="gallery fade-in" style="margin-bottom: 30px;">
+            <div class="gallery-item">
+                <img src="images/shop_1.jpg" alt="店内風景 1">
+            </div>
+            <div class="gallery-item">
+                <img src="images/shop_2.jpg" alt="店内風景 2">
+            </div>
+            <div class="gallery-item">
+                <img src="images/shop_3.jpg" alt="店内風景 3">
+            </div>
+        </div>
+        <div style="text-align: center;" class="fade-in">
+            <a href="photo.html" class="btn-primary">写真をすべて見る</a>
+        </div>
+    </section>
+
+    <!-- Calendar Section -->
+    <section id="calendar" class="calendar">
+        <h2 class="section-title fade-in">営業日</h2>
+        <div class="info-box fade-in">
+            <h3 style="margin-bottom: 20px;">開催日程</h3>
+            <p style="margin-bottom: 30px; font-size: 1.3rem;">毎週金曜２３：００～</p>
+            <p style="font-size: 1.1rem; color: var(--color-text-muted);">インスタンスリーダーにリクエストインバイトを２回</p>
+        </div>
+    </section>
+
+    <!-- News Preview Section -->
+    <section id="news" class="news-preview">
+        <h2 class="section-title fade-in">ニュース</h2>
+        <div class="info-box fade-in" style="max-width: 800px; padding: 30px;">
+            <div id="dynamic-news-preview" class="news-container">
+                <!-- JSで動的に最新2件を描画 -->
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="news.html" class="btn-primary" style="margin-top: 0;">ニュース一覧を見る</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SNS Section -->
+    <section id="sns" class="sns">
+        <h2 class="section-title fade-in">SNS</h2>
+        <div class="sns-container fade-in" style="padding: 30px; text-align: center;">
+            <div style="margin-bottom: 20px;">
+                <a href="https://www.youtube.com/@OumagatokiCH/featured" target="_blank" rel="noopener noreferrer" style="display: inline-block; width: 320px; max-width: 100%; box-sizing: border-box; text-align: center; background: #FF0000; color: #FFF; padding: 12px 20px; border-radius: 50px; font-weight: bold; font-size: 1.1rem; box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4); text-decoration: none;">
+                    YouTubeチャンネルはこちら
+                </a>
+            </div>
+            <div>
+                <a href="https://x.com/oumagatoki_vrc" target="_blank" rel="noopener noreferrer" style="display: inline-block; width: 320px; max-width: 100%; box-sizing: border-box; text-align: center; background: #1DA1F2; color: #FFF; padding: 12px 20px; border-radius: 50px; font-weight: bold; font-size: 1.1rem; box-shadow: 0 4px 15px rgba(29, 161, 242, 0.4); text-decoration: none;">
+                    公式X (Twitter) はこちら
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- News Detail Modal -->
+    <div id="news-modal" class="lightbox">
+        <span class="lightbox-close" id="news-modal-close">&times;</span>
+        <div class="news-modal-content">
+            <div class="news-modal-header">
+                <div class="news-modal-meta">
+                    <span id="news-modal-date" class="news-date"></span>
+                    <span id="news-modal-badge" class="news-badge"></span>
+                </div>
+                <h3 id="news-modal-title" class="news-modal-title"></h3>
+            </div>
+            <div id="news-modal-body" class="news-modal-body">
+                <!-- JS will render news paragraphs here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 彼岸旅館おうまがとき「逢曲時」</p>
+    </footer>
+
+    <script src="news_data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
